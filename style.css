@@ -13,7 +13,7 @@ body {
     font-size: 16px;
     font-weight: normal;
     color: #fff;
-    background: #000 url("/resume.avif") no-repeat top/cover;
+    background: #000 url("resume.avif") no-repeat top/cover;
 }
 
 .container {
