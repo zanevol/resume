@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    background: #000 url("/resume.avif") no-repeat top/cover;
+}
+
+.container {
+    margin: 100px auto 50px;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+    margin-bottom: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #fff,
+    0 0 .8rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 1.3rem #fff;
+}
+
+.info img {
+    display: flex;
+    flex-shrink: 0;
+    width: 200px;
+    border-radius: 10px;
+}
+
+.info .info__content h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 48px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+}
+
+.info .info__content p {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+}
+
+.info .info__content p:last-of-type {
+    margin-bottom: 10px;
+}
+
+.info .info__content a {
+    display: inline-flex;
+    padding: 5px;
+    border: 1px solid #5b9cfc;
+    border-radius: 5px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: #5b9cfc;
+    text-shadow: /* белый свет */ 0 0 1px #5b9cfc,
+    0 0 2px #5b9cfc,
+    0 0 5px #5b9cfc,
+        /* зеленый свет */ 0 0 11px #1E90FF,
+    0 0 20px #1E90FF,
+    0 0 30px #1E90FF,
+    0 0 55px #1E90FF,
+    0 0 80px #1E90FF;
+
+    box-shadow: 0 0 .1rem #5b9cfc,
+    0 0 .2rem #5b9cfc,
+    0 0 .3rem #1E90FF,
+    0 0 .8rem #1E90FF,
+    0 0 1rem #1E90FF,
+    inset 0 0 1.3rem #1E90FF;
+}
+
+.hobby {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+    padding: 40px;
+    gap: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #fff,
+    0 0 .8rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 1.3rem #fff;
+}
+
+.hobby h2 {
+    align-self: flex-start;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+}
+
+.hobby ol {
+    align-self: flex-start;
+}
+
+.hobby ol li {
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+}
+
+.experience {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-bottom: 50px;
+    gap: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #fff,
+    0 0 .8rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 1.3rem #fff;
+}
+
+.experience h2 {
+    align-self: flex-start;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+}
+
+.experience__table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    gap: 24px;
+}
+
+.experience__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience__item span {
+    text-align: left;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #0fa,
+    0 0 20px #0fa,
+    0 0 30px #0fa,
+    0 0 55px #0fa,
+    0 0 80px #0fa;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    gap: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #fff,
+    0 0 .8rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 1.3rem #fff;
+}
+
+.contacts h2 {
+    align-self: flex-start;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+}
+
+.contacts form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 24px;
+}
+
+.contacts__name,
+.contacts__mail,
+.contacts__text {
+    display: flex;
+    position: relative;
+}
+
+.contacts__name input,
+.contacts__mail input,
+.contacts__text textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacts__name label,
+.contacts__mail label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
+    background: transparent;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
+.contacts__text label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -55px);
+    background: inherit;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+
+.contacts__name input:focus ~ label,
+.contacts__mail input:focus ~ label,
+.contacts__name input:not(:placeholder-shown) ~ label,
+.contacts__mail input:not(:placeholder-shown) ~ label {
+    top: 0;
+    font-size: 14px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+}
+
+.contacts__text textarea:focus ~ label,
+.contacts__text textarea:not(:placeholder-shown) ~ label {
+    top: 0;
+    transform: translate(0, -10px);
+    font-size: 14px;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+}
+
+.contacts__text {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.contacts__text textarea {
+    resize: none;
+}
+
+.contacts__btn {
+    grid-row-start: 3;
+}
+
+.contacts__btn input {
+    border: 1px solid #fff;
+    padding: 15px 20px;
+    color: #fff;
+    background: transparent;
+    border-radius: 10px;
+    text-transform: uppercase;
+    transition: all .3s ease-in-out;
+}
+
+.contacts__btn input:hover {
+    cursor: pointer;
+    text-shadow: /* белый свет */ 0 0 1px #fff,
+    0 0 2px #fff,
+    0 0 5px #fff,
+        /* зеленый свет */ 0 0 11px #fff,
+    0 0 20px #fff,
+    0 0 30px #fff,
+    0 0 55px #fff,
+    0 0 80px #fff;
+    box-shadow: 0 0 .1rem #fff,
+    0 0 .2rem #fff,
+    0 0 .3rem #fff,
+    0 0 .8rem #fff,
+    0 0 1rem #fff,
+    inset 0 0 1.3rem #fff;
+}
+
+@media (max-width: 720px) {
+    .info {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .info__content {
+        text-align: center;
+    }
+    .hobby h2,
+    .hobby ol {
+        align-self: center;
+    }
+    .experience h2 {
+        align-self: center;
+        text-align: center;
+    }
+    .experience__table {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .experience__item {
+        justify-self: center;
+    }
+    .experience__item span {
+        align-self: center;
+    }
+
+    .contacts h2 {
+        align-self: center;
+        text-align: center;
+    }
+
+    .contacts form {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .contacts__mail {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+
+    .contacts__text {
+        grid-column-start: 1;
+        grid-column-end: 1;
+    }
+
+    .contacts__btn {
+        grid-row-start: 4;
+    }
+
+}
